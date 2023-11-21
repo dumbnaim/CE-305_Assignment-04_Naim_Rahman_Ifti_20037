@@ -1,0 +1,22 @@
+ORG 100   // Start address
+INPUT                   // Input the value of m
+Store m                 // Store the value of m
+Input                   // Input the value of n
+Store n                 // Store the value of n
+loop,Load m             // Load the value of m
+     add multiply       // Add the value of m
+     store multiply     // Store the value of multiply
+     load n             //load the value of n
+     subt one           // Sub one from n
+     store n
+     skipcond 400       //conditioon statement to check if the multiplication is completed
+     jump loop          // If true jump out of the loop or if false repeat the loop
+     load multiply      // load the value of multiply
+     output             // output of the program
+halt                    // halt the program
+m, dec 0
+n, dec 0
+one, Dec 1
+multiply, dec 0
+
+END 100    // End of program, start address is 100
