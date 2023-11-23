@@ -1,0 +1,18 @@
+ORG 100
+LOAD 'H'CHAR      // load h character
+OUTPUT
+LOAD 'E'CHAR      // load e character
+OUTPUT
+LOAD 'L'CHAR      // load l character
+OUTPUT
+LOAD 'L'CHAR      // load l character
+OUTPUT
+LOAD 'O'CHAR      // load o character
+OUTPUT
+Halt              // halt the program
+
+'H'CHAR, HEX 48   // ASCII  'H'
+'E'CHAR, HEX 65   // ASCII  'e'
+'L'CHAR, HEX 6C   // ASCII  'l'
+'O'CHAR, HEX 6F   // ASCII  'o'
+END 100  
