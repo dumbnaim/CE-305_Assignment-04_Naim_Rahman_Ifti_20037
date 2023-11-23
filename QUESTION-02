@@ -1,0 +1,17 @@
+Org 100
+LOAD i                      // LOAD THE VALUE OF I
+STORE i                     // STORE THE VALUE OF I
+LoopStart, LOAD i           // START THE LOOP AND LOAD THE VALUE OF I
+           SUBT three       // SUBTRACT THREE FROM THE VALUE OF I
+           SKIpCOND 000     // IF I EQUAL THREE
+           JUMP Endloop     // JUMP AND END THE LOOP
+           LOAD i           // OTHERWISE LOAD THE VALUE OF I AGAIN
+           OUTPUT           
+           ADD one          // ADD 1 WITH I
+           STORE i          // STORE I AGAIN
+           JUMP LoopStart   // JUMP TO THE LOOPSATRT AND START THE LOOP AGAIN
+Endloop, HALT               // HALT THE PROGRAM
+i, DEC 0
+three, DEC 3
+one, DEC 1
+End 100   
