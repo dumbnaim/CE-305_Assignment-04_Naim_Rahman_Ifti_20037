@@ -1,0 +1,26 @@
+ORG 100
+LOAD  i           // load the value of i
+STORE i           // store that value
+
+LoopStart, LOAD i         // load the value of i in loop
+           SUBT five      // subtract 5 
+           SKIPCOND 000   // if the statement is negative
+           JUMP Endloop   // jump to the end
+           LOAD i         // otherwise load i again
+           SUBT three     //Subtract 3
+           SKIPCOND 400   // if the statement is positive 
+           JUMP LOOP      // jump to the loop
+           JUMP Endloop   // and jump to the endloop
+           OUTPUT
+LOOP,      LOAD i         //load the value of i in LOOP
+           OUTPUT
+           ADD one        // add 1 with the i
+           STORE i        // then store the value of i
+           JUMP LoopStart // jump to the loopstart
+Endloop,HALT// halt the program  
+
+i, DEC 0
+three, DEC 3
+one, DEC 1
+five, DEC 5
+END 100      
